@@ -1,65 +1,256 @@
-import Image from "next/image";
+import Link from 'next/link';
+import Button from '@/components/Button';
+import Card from '@/components/Card';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="bg-transparent">
+      {/* Hero Section */}
+      <section className="bg-transparent text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="font-black mb-8 text-white drop-shadow-2xl" style={{ fontSize: 'clamp(3rem, 12vw, 8rem)' }}>
+            MAESTRÍA EN TRADING
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mb-12 max-w-4xl mx-auto font-bold text-center leading-tight text-white drop-shadow-xl" style={{ fontSize: 'clamp(1.25rem, 5vw, 2.5rem)' }}>
+            Para aquellos que no necesitan sufrir más
           </p>
+          <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto text-white/90 drop-shadow-lg leading-relaxed" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)' }}>
+            Accede a oportunidades de financiamiento,
+            poderosos indicadores de trading y mentoría personalizada para caminar armonicamente hacia la rentabilidad
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="/mentorship">Obtener Mentoría</Button>
+            <Button href="/funding" variant="secondary">Explorar Financiamiento</Button>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Services Overview */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16 drop-shadow-lg" style={{ fontSize: 'clamp(2rem, 6vw, 3rem)' }}>
+            Nuestros Servicios
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card
+              title="Empresas de Financiamiento"
+              description="Accede a empresas de financiamiento verificadas para trading de futuros y forex. Obtén el capital que necesitas para operar profesionalmente."
+            >
+              <Link href="/funding" className="text-[#C71585] hover:text-[#A01070] font-medium">
+                Ver Opciones →
+              </Link>
+            </Card>
+
+            <Card
+              title="Indicadores de Trading"
+              description="Poderosos indicadores técnicos incluyendo VWAP y NCAT para mejorar tus estrategias de trading y toma de decisiones."
+            >
+              <Link href="/indicators" className="text-[#C71585] hover:text-[#A01070] font-medium">
+                Explorar →
+              </Link>
+            </Card>
+
+            <Card
+              title="Brokers CFD Verificados"
+              description="Recomendamos brokers confiables con los que hemos trabajado: Vantage, Tickmill e IC Markets. Plataformas seguras y reguladas."
+            >
+              <Link href="#brokers" className="text-[#C71585] hover:text-[#A01070] font-medium">
+                Ver Brokers →
+              </Link>
+            </Card>
+
+            <Card
+              title="Mentoría Personalizada"
+              description="Guía uno a uno de traders experimentados. Aprende estrategias probadas y evita errores comunes."
+            >
+              <Link href="/mentorship" className="text-[#C71585] hover:text-[#A01070] font-medium">
+                Saber Más →
+              </Link>
+            </Card>
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* Brokers CFD Section */}
+      <section id="brokers" className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-8 drop-shadow-lg" style={{ fontSize: 'clamp(2rem, 6vw, 3rem)' }}>
+              Brokers CFD Verificados
+            </h2>
+            <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto drop-shadow-md leading-relaxed" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)' }}>
+              Recomendamos brokers confiables con los que hemos trabajado directamente.
+              Plataformas seguras, reguladas y con spreads competitivos.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <Card
+              title="Vantage"
+              description="Broker australiano con spreads desde 0.0 pips. Excelente ejecución, apalancamiento hasta 1:500 y plataforma MT4/MT5."
+            >
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-green-400 font-medium">Regulado por ASIC</span>
+                <a href="#" className="text-[#C71585] hover:text-[#A01070] font-medium">
+                  Abrir Cuenta →
+                </a>
+              </div>
+            </Card>
+
+            <Card
+              title="Tickmill"
+              description="Broker con sede en Seychelles, spreads desde 0.0 pips. Conocido por su ejecución rápida y servicio al cliente excepcional."
+            >
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-green-400 font-medium">Regulado por FSA</span>
+                <a href="#" className="text-[#C71585] hover:text-[#A01070] font-medium">
+                  Abrir Cuenta →
+                </a>
+              </div>
+            </Card>
+
+            <Card
+              title="IC Markets"
+              description="Broker australiano líder, spreads desde 0.0 pips. Una de las plataformas más rápidas con ejecución instantánea."
+            >
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-green-400 font-medium">Regulado por ASIC</span>
+                <a href="#" className="text-[#C71585] hover:text-[#A01070] font-medium">
+                  Abrir Cuenta →
+                </a>
+              </div>
+            </Card>
+          </div>
+
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
+            <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-6 drop-shadow-lg" style={{ fontSize: 'clamp(1.25rem, 4vw, 2rem)' }}>
+              ¿Por Qué Estos Brokers?
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="text-4xl mb-3">🛡️</div>
+                <h4 className="font-semibold text-white mb-2">Regulados</h4>
+                <p className="text-white/80 text-sm">Licencias oficiales de ASIC y FSA</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl mb-3">⚡</div>
+                <h4 className="font-semibold text-white mb-2">Ejecución Rápida</h4>
+                <p className="text-white/80 text-sm">Spreads desde 0.0 pips y baja latencia</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl mb-3">💰</div>
+                <h4 className="font-semibold text-white mb-2">Apalancamiento Alto</h4>
+                <p className="text-white/80 text-sm">Hasta 1:500 para maximizar oportunidades</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl mb-3">🎯</div>
+                <h4 className="font-semibold text-white mb-2">Verificados</h4>
+                <p className="text-white/80 text-sm">Hemos trabajado con ellos personalmente</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Platforms Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-8 drop-shadow-lg" style={{ fontSize: 'clamp(2rem, 6vw, 3rem)' }}>
+              Plataformas que Recomendamos
+            </h2>
+            <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto drop-shadow-md leading-relaxed" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)' }}>
+              Utilizamos y recomendamos estas plataformas de trading por su calidad y rendimiento excepcional.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <Card
+              title="NinjaTrader"
+              description="Plataforma profesional de trading que utilizamos para futuros, forex y opciones. Excelente para análisis técnico avanzado y ejecución de órdenes."
+            >
+              <div className="flex flex-col items-center space-y-4">
+                <img
+                  src="/partners/ninjatrader.png"
+                  alt="NinjaTrader Logo"
+                  className="h-16 w-auto object-contain"
+                />
+                <a
+                  href="https://ninjatrader.com/"
+                  target="_blank"
+                  rel="nofollow sponsored"
+                  className="text-[#C71585] hover:text-[#A01070] font-medium"
+                >
+                  Visitar NinjaTrader →
+                </a>
+              </div>
+            </Card>
+
+            <Card
+              title="Kinetick"
+              description="Proveedor de datos de mercado en tiempo real que recomendamos. Ofrece feeds de alta calidad para múltiples mercados globales con latencia ultra baja."
+            >
+              <div className="flex flex-col items-center space-y-4">
+                <img
+                  src="/partners/kinetick.png"
+                  alt="Kinetick Logo"
+                  className="h-16 w-auto object-contain"
+                />
+                <a
+                  href="https://kinetick.com/"
+                  target="_blank"
+                  rel="nofollow sponsored"
+                  className="text-[#C71585] hover:text-[#A01070] font-medium"
+                >
+                  Visitar Kinetick →
+                </a>
+              </div>
+            </Card>
+          </div>
+
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
+            <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-6 drop-shadow-lg" style={{ fontSize: 'clamp(1.25rem, 4vw, 2rem)' }}>
+              ¿Por Qué Recomendamos Estas Plataformas?
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="text-4xl mb-3">🎯</div>
+                <h4 className="font-semibold text-white mb-2">Profesional</h4>
+                <p className="text-white/80 text-sm">Herramientas utilizadas por traders profesionales</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl mb-3">⚡</div>
+                <h4 className="font-semibold text-white mb-2">Rápidas</h4>
+                <p className="text-white/80 text-sm">Ejecución instantánea y datos en tiempo real</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl mb-3">🔧</div>
+                <h4 className="font-semibold text-white mb-2">Personalizables</h4>
+                <p className="text-white/80 text-sm">Adaptables a cualquier estrategia de trading</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl mb-3">🌍</div>
+                <h4 className="font-semibold text-white mb-2">Globales</h4>
+                <p className="text-white/80 text-sm">Acceso a mercados internacionales</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="bg-white/10 backdrop-blur-sm text-white py-20 border-t border-white/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-lg" style={{ fontSize: 'clamp(2rem, 6vw, 3rem)' }}>
+            ¿Listo para Empezar tu Viaje en el Trading?
+          </h2>
+          <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto text-white/90 drop-shadow-md leading-relaxed" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)' }}>
+            Únete a miles de traders que han transformado sus carreras con nuestros recursos comunitarios.
+          </p>
+          <Button href="/mentorship">Comienza Hoy</Button>
+        </div>
+      </section>
     </div>
   );
 }
+
