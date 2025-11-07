@@ -6,15 +6,15 @@ export default function Home() {
   return (
     <div className="bg-transparent">
       {/* Hero Section */}
-      <section className="bg-transparent text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-black mb-8 text-white drop-shadow-2xl" style={{ fontSize: 'clamp(3rem, 12vw, 8rem)' }}>
+      <section className="section">
+        <div className="container-main text-center">
+          <h1 className="heading-primary">
             MAESTRÍA EN TRADING
           </h1>
-          <p className="mb-12 max-w-4xl mx-auto font-bold text-center leading-tight text-white drop-shadow-xl" style={{ fontSize: 'clamp(1.25rem, 5vw, 2.5rem)' }}>
+          <p className="paragraph-large mb-12 max-w-4xl mx-auto">
             Para aquellos que no necesitan sufrir más
           </p>
-          <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto text-white/90 drop-shadow-lg leading-relaxed" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)' }}>
+          <p className="paragraph-medium mb-12 max-w-3xl mx-auto">
             Accede a oportunidades de financiamiento,
             poderosos indicadores de trading y mentoría personalizada para caminar armonicamente hacia la rentabilidad
           </p>
@@ -26,9 +26,9 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16 drop-shadow-lg" style={{ fontSize: 'clamp(2rem, 6vw, 3rem)' }}>
+      <section className="section-sm">
+        <div className="container-main">
+          <h2 className="heading-secondary mb-16">
             Nuestros Servicios
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -72,13 +72,13 @@ export default function Home() {
       </section>
 
       {/* Brokers CFD Section */}
-      <section id="brokers" className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="brokers" className="section">
+        <div className="container-main">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-8 drop-shadow-lg" style={{ fontSize: 'clamp(2rem, 6vw, 3rem)' }}>
+            <h2 className="heading-secondary mb-8">
               Brokers CFD Verificados
             </h2>
-            <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto drop-shadow-md leading-relaxed" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)' }}>
+            <p className="paragraph-medium max-w-3xl mx-auto">
               Recomendamos brokers confiables con los que hemos trabajado directamente.
               Plataformas seguras, reguladas y con spreads competitivos.
             </p>
@@ -122,8 +122,8 @@ export default function Home() {
             </Card>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-            <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-6 drop-shadow-lg" style={{ fontSize: 'clamp(1.25rem, 4vw, 2rem)' }}>
+          <div className="card-glass">
+            <h3 className="heading-tertiary text-center mb-6">
               ¿Por Qué Estos Brokers?
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -153,13 +153,13 @@ export default function Home() {
       </section>
 
       {/* Platforms Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="section">
+        <div className="container-main">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-8 drop-shadow-lg" style={{ fontSize: 'clamp(2rem, 6vw, 3rem)' }}>
+            <h2 className="heading-secondary mb-8">
               Plataformas que Recomendamos
             </h2>
-            <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto drop-shadow-md leading-relaxed" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)' }}>
+            <p className="paragraph-medium max-w-3xl mx-auto">
               Utilizamos y recomendamos estas plataformas de trading por su calidad y rendimiento excepcional.
             </p>
           </div>
@@ -208,8 +208,8 @@ export default function Home() {
             </Card>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-            <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-6 drop-shadow-lg" style={{ fontSize: 'clamp(1.25rem, 4vw, 2rem)' }}>
+          <div className="card-glass">
+            <h3 className="heading-tertiary text-center mb-6">
               ¿Por Qué Recomendamos Estas Plataformas?
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -239,12 +239,12 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-white/10 backdrop-blur-sm text-white py-20 border-t border-white/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 drop-shadow-lg" style={{ fontSize: 'clamp(2rem, 6vw, 3rem)' }}>
+      <section className="card-glass section border-t border-white/20">
+        <div className="container-main text-center">
+          <h2 className="heading-secondary mb-8">
             ¿Listo para Empezar tu Viaje en el Trading?
           </h2>
-          <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto text-white/90 drop-shadow-md leading-relaxed" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)' }}>
+          <p className="paragraph-medium mb-12 max-w-2xl mx-auto">
             Únete a miles de traders que han transformado sus carreras con nuestros recursos comunitarios.
           </p>
           <Button href="/mentorship">Comienza Hoy</Button>

@@ -4,12 +4,12 @@ import Card from '@/components/Card';
 export default function IndicatorsPage() {
   return (
     <div className="bg-transparent min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="container-main py-16">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="heading-primary text-secondary mb-4">
             Indicadores de Trading
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="paragraph-large text-muted max-w-3xl mx-auto">
             Mejora tus estrategias de trading con nuestros indicadores técnicos premium.
             Herramientas de grado profesional diseñadas para traders serios.
           </p>
@@ -39,8 +39,8 @@ export default function IndicatorsPage() {
           </Link>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+        <div className="card-base">
+          <h2 className="heading-tertiary text-secondary mb-6 text-center">
             ¿Por Qué Elegir Nuestros Indicadores?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">

@@ -28,12 +28,12 @@ export default function MentorshipPage() {
 
   return (
     <div className="bg-transparent min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="container-main py-16">
         <div className="text-center mb-16">
-          <h1 className="font-black text-white mb-8 drop-shadow-2xl" style={{ fontSize: 'clamp(2.5rem, 8vw, 5rem)' }}>
+          <h1 className="heading-primary">
             Mentoría Personalizada
           </h1>
-          <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto drop-shadow-lg leading-relaxed" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)' }}>
+          <p className="paragraph-medium max-w-3xl mx-auto">
             Obtén guía uno a uno de traders experimentados. Aprende estrategias probadas,
             evita errores comunes y acelera tu viaje en el trading con mentoría personalizada.
           </p>
@@ -41,7 +41,7 @@ export default function MentorshipPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 drop-shadow-lg" style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)' }}>Lo Que Obtienes</h2>
+            <h2 className="heading-secondary mb-8">Lo Que Obtienes</h2>
             <div className="space-y-6">
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-white/20">
                 <h3 className="font-semibold text-white mb-2">📚 Desarrollo de Estrategias</h3>
@@ -67,7 +67,7 @@ export default function MentorshipPage() {
           </div>
 
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 drop-shadow-lg" style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)' }}>Programas de Mentoría</h2>
+            <h2 className="heading-secondary mb-8">Programas de Mentoría</h2>
             <div className="space-y-6">
               <Card
                 title="Programa Principiante - $29/mes"
@@ -120,8 +120,8 @@ export default function MentorshipPage() {
           </div>
         </div>
 
-        <div className="bg-white/10 backdrop-blur-sm rounded-lg shadow-lg p-8 border border-white/20">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center drop-shadow-lg" style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)' }}>
+        <div className="card-glass">
+          <h2 className="heading-secondary mb-8 text-center">
             Inicia Tu Viaje de Mentoría
           </h2>
           <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">

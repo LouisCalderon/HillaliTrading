@@ -27,12 +27,12 @@ export default function FuturesFundingPage() {
 
   return (
     <div className="bg-transparent min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="container-main py-16">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="heading-primary text-secondary mb-4">
             Empresas de Financiamiento de Futuros
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="paragraph-large text-muted max-w-3xl mx-auto">
             Obtén financiamiento para operar mercados de futuros profesionalmente. Nuestras empresas asociadas ofrecen
             programas competitivos de evaluación y altos splits de ganancias para traders exitosos.
           </p>
@@ -59,8 +59,8 @@ export default function FuturesFundingPage() {
           ))}
         </div>
 
-        <div className="mt-16 bg-white rounded-lg shadow-md p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+        <div className="card-base mt-16">
+          <h2 className="heading-tertiary text-secondary mb-6 text-center">
             Cómo Funciona el Financiamiento de Futuros
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
