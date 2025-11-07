@@ -33,7 +33,7 @@ export default function MentorshipPage() {
           <h1 className="heading-primary">
             Mentoría Personalizada
           </h1>
-          <p className="paragraph-medium max-w-3xl mx-auto">
+          <p className="paragraph-large max-w-3xl mx-auto">
             Obtén guía uno a uno de traders experimentados. Aprende estrategias probadas,
             evita errores comunes y acelera tu viaje en el trading con mentoría personalizada.
           </p>
