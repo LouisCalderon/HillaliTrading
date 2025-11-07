@@ -78,16 +78,7 @@ export default function Footer() {
 
             <div>
               <h4 className="text-white font-semibold mb-2">Declaración sobre Monedas Virtuales:</h4>
-              <p>Consulte los avisos de la{' '}
-              <a
-                href="https://www.cftc.gov/sites/default/files/idc/groups/public/@customerprotection/documents/file/customeradvisory_urvct121517.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:text-primary-dark underline font-medium"
-              >
-                CFTC
-              </a>
-              , ya que contienen más información sobre los riesgos asociados al comercio de monedas virtuales.</p>
+              <p>Consulte los avisos de la CFTC, ya que contienen más información sobre los riesgos asociados al comercio de monedas virtuales.</p>
             </div>
           </div>
 

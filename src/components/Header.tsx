@@ -18,16 +18,16 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="text-white hover:text-accent transition-colors drop-shadow-md">
+            <Link href="/" className="text-white hover:text-[#00CCFF] transition-colors drop-shadow-md">
               Inicio
             </Link>
-            <Link href="/funding" className="text-white hover:text-accent transition-colors drop-shadow-md">
+            <Link href="/funding" className="text-white hover:text-[#00CCFF] transition-colors drop-shadow-md">
               Financiamiento
             </Link>
-            <Link href="/indicators" className="text-white hover:text-accent transition-colors drop-shadow-md">
+            <Link href="/indicators" className="text-white hover:text-[#00CCFF] transition-colors drop-shadow-md">
               Indicadores
             </Link>
-            <Link href="/mentorship" className="text-white hover:text-accent transition-colors drop-shadow-md">
+            <Link href="/mentorship" className="text-white hover:text-[#00CCFF] transition-colors drop-shadow-md">
               Mentoría
             </Link>
           </nav>
@@ -36,7 +36,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-accent focus:outline-none drop-shadow-md"
+              className="text-white hover:text-[#00CCFF] focus:outline-none drop-shadow-md"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (
@@ -53,16 +53,16 @@ export default function Header() {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 backdrop-blur-md border-t shadow-lg">
-              <Link href="/" className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors">
+              <Link href="/" className="block px-3 py-2 text-gray-900 hover:text-[#C71585] transition-colors">
                 Inicio
               </Link>
-              <Link href="/funding" className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors">
+              <Link href="/funding" className="block px-3 py-2 text-gray-900 hover:text-[#C71585] transition-colors">
                 Financiamiento
               </Link>
-              <Link href="/indicators" className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors">
+              <Link href="/indicators" className="block px-3 py-2 text-gray-900 hover:text-[#C71585] transition-colors">
                 Indicadores
               </Link>
-              <Link href="/mentorship" className="block px-3 py-2 text-gray-900 hover:text-primary transition-colors">
+              <Link href="/mentorship" className="block px-3 py-2 text-gray-900 hover:text-[#C71585] transition-colors">
                 Mentoría
               </Link>
             </div>

@@ -91,7 +91,7 @@ export default function Home() {
             >
               <div className="flex items-center justify-between">
                 <span className="text-sm text-green-400 font-medium">Regulado por ASIC</span>
-                <a href="https://vigco.co/la-com/RetoX3" className="text-[#C71585] hover:text-[#A01070] font-medium">
+                <a href="#" className="text-[#C71585] hover:text-[#A01070] font-medium">
                   Abrir Cuenta →
                 </a>
               </div>
@@ -167,7 +167,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <Card
               title="NinjaTrader"
-              description="Plataforma profesional de trading que utilizamos para futuros. Excelente para análisis técnico avanzado y ejecución de órdenes."
+              description="Plataforma profesional de trading que utilizamos para futuros, forex y opciones. Excelente para análisis técnico avanzado y ejecución de órdenes."
             >
               <div className="flex flex-col items-center space-y-4">
                 <img
