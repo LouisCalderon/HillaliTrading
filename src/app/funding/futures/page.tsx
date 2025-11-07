@@ -4,24 +4,24 @@ export default function FuturesFundingPage() {
   const futuresCompanies = [
     {
       name: "TopStepTrader",
-      description: "Leading futures funding company with comprehensive evaluation programs. Trade E-mini futures with up to $200,000 in funding.",
-      features: ["Proprietary trading accounts", "90% profit split", "No time limits", "Daily drawdown resets"],
+      description: "Empresa líder en financiamiento de futuros con programas completos de evaluación. Opera futuros E-mini con hasta $200,000 en financiamiento.",
+      features: ["Cuentas de trading propietarias", "90% de participación en ganancias", "Sin límites de tiempo", "Reinicios diarios de drawdown"],
       link: "#",
-      linkText: "Get Referral"
+      linkText: "Obtener Referencia"
     },
     {
       name: "Futures Funding Pro",
-      description: "Professional futures funding with flexible account sizes. Specialize in commodities and indices trading.",
-      features: ["Multiple account sizes", "80% profit split", "Advanced analytics", "24/7 support"],
+      description: "Financiamiento profesional de futuros con tamaños de cuenta flexibles. Especializados en trading de commodities e índices.",
+      features: ["Múltiples tamaños de cuenta", "80% de participación en ganancias", "Analíticas avanzadas", "Soporte 24/7"],
       link: "#",
-      linkText: "Get Referral"
+      linkText: "Obtener Referencia"
     },
     {
       name: "Elite Futures Capital",
-      description: "Premium futures funding for experienced traders. High funding amounts with competitive profit splits.",
-      features: ["Up to $500,000 funding", "85% profit split", "Instant payouts", "Custom strategies"],
+      description: "Financiamiento premium de futuros para traders experimentados. Altos montos de financiamiento con splits competitivos de ganancias.",
+      features: ["Hasta $500,000 en financiamiento", "85% de participación en ganancias", "Pagos instantáneos", "Estrategias personalizadas"],
       link: "#",
-      linkText: "Get Referral"
+      linkText: "Obtener Referencia"
     }
   ];
 
@@ -30,11 +30,11 @@ export default function FuturesFundingPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Futures Funding Companies
+            Empresas de Financiamiento de Futuros
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get funded to trade futures markets professionally. Our partner companies offer
-            competitive evaluation programs and high profit splits for successful traders.
+            Obtén financiamiento para operar mercados de futuros profesionalmente. Nuestras empresas asociadas ofrecen
+            programas competitivos de evaluación y altos splits de ganancias para traders exitosos.
           </p>
         </div>
 
@@ -61,36 +61,36 @@ export default function FuturesFundingPage() {
 
         <div className="mt-16 bg-white rounded-lg shadow-md p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            How Futures Funding Works
+            Cómo Funciona el Financiamiento de Futuros
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-blue-600">1</span>
+              <div className="bg-[#C71585]/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-[#C71585]">1</span>
               </div>
-              <h3 className="font-semibold mb-2">Pass Evaluation</h3>
-              <p className="text-gray-600 text-sm">Complete the trading challenge with specific profit targets and risk limits</p>
+              <h3 className="font-semibold mb-2">Pasa la Evaluación</h3>
+              <p className="text-gray-600 text-sm">Completa el desafío de trading con objetivos específicos de ganancias y límites de riesgo</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-blue-600">2</span>
+              <div className="bg-[#C71585]/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-[#C71585]">2</span>
               </div>
-              <h3 className="font-semibold mb-2">Get Funded</h3>
-              <p className="text-gray-600 text-sm">Receive trading capital based on your evaluation performance</p>
+              <h3 className="font-semibold mb-2">Obtén Financiamiento</h3>
+              <p className="text-gray-600 text-sm">Recibe capital de trading basado en tu rendimiento en la evaluación</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-blue-600">3</span>
+              <div className="bg-[#C71585]/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-[#C71585]">3</span>
               </div>
-              <h3 className="font-semibold mb-2">Trade & Profit</h3>
-              <p className="text-gray-600 text-sm">Trade with professional capital and earn profit splits</p>
+              <h3 className="font-semibold mb-2">Opera y Gana</h3>
+              <p className="text-gray-600 text-sm">Opera con capital profesional y gana splits de ganancias</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-blue-600">4</span>
+              <div className="bg-[#C71585]/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-[#C71585]">4</span>
               </div>
-              <h3 className="font-semibold mb-2">Scale Up</h3>
-              <p className="text-gray-600 text-sm">Increase account size as you prove consistent profitability</p>
+              <h3 className="font-semibold mb-2">Escala</h3>
+              <p className="text-gray-600 text-sm">Aumenta el tamaño de tu cuenta conforme demuestres rentabilidad consistente</p>
             </div>
           </div>
         </div>
