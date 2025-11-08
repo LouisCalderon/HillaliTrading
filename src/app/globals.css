@@ -19,6 +19,30 @@
   --color-text-muted: #6b7280;     /* Gris medio */
   --color-text-light: #9ca3af;     /* Gris claro */
 
+  /* Nuevos colores para profundidad */
+  --color-surface-50: #fafafa;    /* Blanco muy suave */
+  --color-surface-100: #f4f4f5;   /* Blanco suave */
+  --color-surface-200: #e4e4e7;   /* Gris muy claro */
+  --color-surface-300: #d4d4d8;   /* Gris claro */
+  --color-surface-400: #a1a1aa;   /* Gris medio */
+  --color-surface-500: #71717a;   /* Gris */
+  --color-surface-600: #52525b;   /* Gris oscuro */
+  --color-surface-700: #3f3f46;   /* Gris muy oscuro */
+  --color-surface-800: #27272a;   /* Casi negro */
+  --color-surface-900: #18181b;   /* Negro */
+
+  /* Colores de acento adicionales */
+  --color-accent-50: #fef2f2;     /* Rojo muy claro */
+  --color-accent-100: #fee2e2;    /* Rojo claro */
+  --color-accent-200: #fecaca;    /* Rojo suave */
+  --color-accent-300: #fca5a5;    /* Rojo medio */
+  --color-accent-400: #f87171;    /* Rojo */
+  --color-accent-500: #ef4444;    /* Rojo fuerte */
+  --color-accent-600: #dc2626;    /* Rojo oscuro */
+  --color-accent-700: #b91c1c;    /* Rojo muy oscuro */
+  --color-accent-800: #991b1b;    /* Rojo intenso */
+  --color-accent-900: #7f1d1d;    /* Rojo profundo */
+
   /* Colores de Fondo */
   --color-bg-primary: #ffffff;     /* Blanco */
   --color-bg-secondary: rgba(255, 255, 255, 0.1); /* Blanco transparente */
@@ -131,8 +155,128 @@ body {
 }
 
 /* ===========================================
-   COMPONENTES BASE REUTILIZABLES
-   =========================================== */
+    COMPONENTES BASE REUTILIZABLES
+    =========================================== */
+
+/* Hero Section Mejorado */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 25%,
+    var(--color-accent) 50%,
+    var(--color-accent-light) 75%,
+    var(--color-primary) 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Cards de Servicio con Gradientes Únicos */
+.service-card-funding {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent-600));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all var(--transition-normal);
+}
+
+.service-card-funding:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(199, 21, 133, 0.3);
+}
+
+.service-card-indicators {
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all var(--transition-normal);
+}
+
+.service-card-indicators:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(50, 18, 122, 0.3);
+}
+
+.service-card-brokers {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all var(--transition-normal);
+}
+
+.service-card-brokers:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(111, 0, 255, 0.3);
+}
+
+.service-card-mentorship {
+  background: linear-gradient(135deg, var(--color-accent-light), var(--color-primary));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all var(--transition-normal);
+}
+
+.service-card-mentorship:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 204, 255, 0.3);
+}
+
+/* Separadores Visuales */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.2) 80%,
+    transparent 100%);
+  margin: var(--spacing-5xl) 0;
+}
+
+/* Elementos Decorativos */
+.decorative-element {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.decorative-element-1 {
+  top: 10%;
+  right: 10%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.decorative-element-2 {
+  bottom: 20%;
+  left: 5%;
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
 
 /* Contenedor Principal */
 .container-main {

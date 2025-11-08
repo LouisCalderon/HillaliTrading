@@ -6,70 +6,89 @@ export default function Home() {
   return (
     <div className="bg-transparent">
       {/* Hero Section */}
-      <section className="section">
-        <div className="container-main text-center">
-          <h1 className="heading-primary">
-            MAESTRÍA EN TRADING
-          </h1>
-          <p className="paragraph-large mb-12 max-w-4xl mx-auto">
-            Para aquellos que no necesitan sufrir más
-          </p>
-          <p className="paragraph-medium mb-12 max-w-3xl mx-auto">
-            Accede a oportunidades de financiamiento,
-            poderosos indicadores de trading y mentoría personalizada para caminar armonicamente hacia la rentabilidad
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/mentorship">Obtener Mentoría</Button>
-            <Button href="/funding" variant="secondary">Explorar Financiamiento</Button>
+      <section className="hero-section">
+        <div className="decorative-element decorative-element-1"></div>
+        <div className="decorative-element decorative-element-2"></div>
+        <div className="container-main text-center relative z-10">
+          <div className="animate-fade-in">
+            <h1 className="heading-primary mb-6">
+              MAESTRÍA EN TRADING
+            </h1>
+            <p className="paragraph-large mb-8 max-w-4xl mx-auto text-white/90">
+              Para aquellos que no necesitan sufrir más
+            </p>
+            <p className="paragraph-medium mb-12 max-w-3xl mx-auto text-white/80">
+              Oportunidades de financiamiento, indicadores de trading y mentoría personalizada
+              para caminar armónicamente hacia la rentabilidad
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <div className="animate-slide-in">
+                <Button href="/mentorship">Obtener Mentoría</Button>
+              </div>
+              <div className="animate-slide-in" style={{ animationDelay: '0.2s' }}>
+                <Button href="/funding" variant="secondary">Explorar Financiamiento</Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Services Overview */}
-      <section className="section-sm">
+      <section className="section-sm bg-gradient-to-b from-transparent to-white/5">
         <div className="container-main">
-          <h2 className="heading-secondary mb-16">
+          <h2 className="heading-secondary mb-16 text-center">
             Nuestros Servicios
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card
-              title="Empresas de Financiamiento"
-              description="Accede a empresas de financiamiento verificadas para trading de futuros y forex. Obtén el capital que necesitas para operar profesionalmente."
-            >
-              <Link href="/funding" className="text-[#C71585] hover:text-[#A01070] font-medium">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="service-card-funding card-base p-8 rounded-xl text-white animate-fade-in">
+              <div className="text-6xl mb-6">💰</div>
+              <h3 className="text-xl font-bold mb-4">Empresas de Financiamiento</h3>
+              <p className="text-white/90 mb-6 leading-relaxed">
+                Accede a empresas de financiamiento verificadas para trading de futuros y forex. Obtén el capital que necesitas para operar profesionalmente.
+              </p>
+              <Link href="/funding" className="text-white hover:text-white/80 font-semibold text-lg transition-colors inline-flex items-center gap-2">
                 Ver Opciones →
               </Link>
-            </Card>
+            </div>
 
-            <Card
-              title="Indicadores de Trading"
-              description="Poderosos indicadores técnicos incluyendo VWAP y NCAT para mejorar tus estrategias de trading y toma de decisiones."
-            >
-              <Link href="/indicators" className="text-[#C71585] hover:text-[#A01070] font-medium">
+            <div className="service-card-indicators card-base p-8 rounded-xl text-white animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              <div className="text-6xl mb-6">📊</div>
+              <h3 className="text-xl font-bold mb-4">Indicadores de Trading</h3>
+              <p className="text-white/90 mb-6 leading-relaxed">
+                Poderosos indicadores técnicos incluyendo VWAP y NCAT para mejorar tus estrategias de trading y toma de decisiones.
+              </p>
+              <Link href="/indicators" className="text-white hover:text-white/80 font-semibold text-lg transition-colors inline-flex items-center gap-2">
                 Explorar →
               </Link>
-            </Card>
+            </div>
 
-            <Card
-              title="Brokers CFD Verificados"
-              description="Recomendamos brokers confiables con los que hemos trabajado: Vantage, Tickmill e IC Markets. Plataformas seguras y reguladas."
-            >
-              <Link href="#brokers" className="text-[#C71585] hover:text-[#A01070] font-medium">
+            <div className="service-card-brokers card-base p-8 rounded-xl text-white animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <div className="text-6xl mb-6">🏦</div>
+              <h3 className="text-xl font-bold mb-4">Brokers CFD Verificados</h3>
+              <p className="text-white/90 mb-6 leading-relaxed">
+                Recomendamos brokers confiables con los que hemos trabajado: Vantage, Tickmill e IC Markets. Plataformas seguras y reguladas.
+              </p>
+              <Link href="#brokers" className="text-white hover:text-white/80 font-semibold text-lg transition-colors inline-flex items-center gap-2">
                 Ver Brokers →
               </Link>
-            </Card>
+            </div>
 
-            <Card
-              title="Mentoría Personalizada"
-              description="Guía uno a uno de traders experimentados. Aprende estrategias probadas y evita errores comunes."
-            >
-              <Link href="/mentorship" className="text-[#C71585] hover:text-[#A01070] font-medium">
+            <div className="service-card-mentorship card-base p-8 rounded-xl text-white animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <div className="text-6xl mb-6">👨‍🏫</div>
+              <h3 className="text-xl font-bold mb-4">Mentoría Personalizada</h3>
+              <p className="text-white/90 mb-6 leading-relaxed">
+                Guía uno a uno de traders experimentados. Aprende estrategias probadas y evita errores comunes.
+              </p>
+              <Link href="/mentorship" className="text-white hover:text-white/80 font-semibold text-lg transition-colors inline-flex items-center gap-2">
                 Saber Más →
               </Link>
-            </Card>
+            </div>
           </div>
         </div>
       </section>
+
+      {/* Section Divider */}
+      <div className="section-divider"></div>
 
       {/* Brokers CFD Section */}
       <section id="brokers" className="section">
@@ -151,6 +170,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Section Divider */}
+      <div className="section-divider"></div>
 
       {/* Platforms Section */}
       <section className="section">
@@ -237,6 +259,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Section Divider */}
+      <div className="section-divider"></div>
 
       {/* Call to Action */}
       <section className="card-glass section border-t border-white/20">
